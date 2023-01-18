@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     # Startapp
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
