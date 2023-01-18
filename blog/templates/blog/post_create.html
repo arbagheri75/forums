@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Post List
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <input type="submit" class="btn btn-sm btn-success" value="Create">
+    </form>
+    <br>
+{% endblock %}

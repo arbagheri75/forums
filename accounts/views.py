@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.views.generic import CreateView
 
-# Create your views here.
+from .models import CustomUser
+from .forms import CustomUserCreationForm
+
+
+class SignUpView(CreateView):
+    form_class = CustomUserCreationForm
+    template_name = 'registration/signup.html'
