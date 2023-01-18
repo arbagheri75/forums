@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Install app
+    'crispy_forms',
 
     # Startapp
     'blog',
@@ -133,6 +134,9 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# CrispyForms Config
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 # Authentication Settings
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
@@ -143,3 +147,4 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 # Media config
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
+
